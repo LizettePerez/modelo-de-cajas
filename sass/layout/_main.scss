@@ -1,0 +1,14 @@
+@use '../abstract/variables';
+
+.main {
+  &__container{
+    width: variables.$container-width-lg;
+    margin: variables.$margin-md auto;
+    border: 1px solid variables.$border;
+    padding: variables.$padding-md;
+    background: variables.$bg-secondary;
+  }
+
+
+
+}

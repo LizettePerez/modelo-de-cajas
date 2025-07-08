@@ -1,0 +1,38 @@
+@use '../abstract/variables';
+
+.btn {
+  padding: variables.$padding-sm variables.$padding-md;
+  margin-right: variables.$margin-sm;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &--primary {
+    background-color: variables.$color-primary;
+    color: variables.$text-tertiary;
+    border: 1px solid variables.$color-primary;
+
+    &:hover {
+      background-color: variables.$color-secondary;
+      color: variables.$color-primary;
+    }
+  }
+
+  &--secondary {
+    background-color: variables.$bg-primary;
+    color: variables.$text-primary;
+    border: 1px solid variables.$border;
+
+    &:hover {
+      background-color: variables.$text-subtitle;
+      color: variables.$bg-primary;
+    }
+  }
+
+  @media (max-width: variables.$breakpoint-sm) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: variables.$margin-sm;
+
+  }
+}

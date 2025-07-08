@@ -1,0 +1,14 @@
+@use '../abstract/variables';
+
+.header {
+  &__container{
+    width: variables.$container-width-full;
+    padding: variables.$padding-sm;
+    background: variables.$color-secondary;
+  }
+
+  &__title {
+    text-align: center;
+    color: variables.$text-primary;
+  }
+}

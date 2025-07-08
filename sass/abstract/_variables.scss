@@ -1,0 +1,64 @@
+//Colores
+$color-primary: #344c36;
+$color-secondary: #faad1b;
+
+$text-primary: #262626;
+$text-secondary: #faad1b;
+$text-tertiary: #ffffff;
+$text-subtitle: #7a7575;
+
+$bg-primary: #ffffff;
+$bg-secondary: #f5f5f5;
+
+$border: #e5e5e5;
+
+//Tipografía
+$font-size-h1: 48px;
+$font-size-h2: 36px;
+$font-size-h3: 24px;
+$font-size-h4: 21px;
+$font-size-h5: 12px;
+$font-size-h6: 18px;
+$font-size-p: 18px;
+$font-size-button: 15px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$letter-spacing-default: 0;
+$letter-spacing-tight: -3%;
+$letter-spacing-loose: 5%;
+
+$line-height-default: 150%;
+$line-height-heading: 125%;
+
+//Espaciado
+$padding-xs: 4px;
+$padding-sm: 10px;
+$padding-md: 20px;
+$padding-lg: 40px;
+
+$margin-xs: 4px;
+$margin-sm: 10px;
+$margin-md: 20px;
+$margin-lg: 50px;
+
+//Tamaños
+$container-width-full: 100%;
+$container-width-lg: 80%;
+$footer-height: 100px;
+
+//Bordes
+$border-radius: 5px;
+$border-width: 1px;
+
+//Sombras
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+//Breakpoints
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;

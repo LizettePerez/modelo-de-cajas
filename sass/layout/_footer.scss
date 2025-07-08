@@ -1,0 +1,16 @@
+@use '../abstract/variables';
+
+
+.footer {
+  &__container{
+    height: variables.$footer-height;
+    padding: variables.$padding-md;
+    background: variables.$color-primary;
+    margin-top: variables.$margin-lg;
+  }
+
+  &__title {
+    text-align: center;
+    color: variables.$text-tertiary;
+  }
+}

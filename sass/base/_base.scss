@@ -1,0 +1,85 @@
+@use '../abstract/variables';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: variables.$bg-primary;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-size: variables.$font-size-h1;
+  font-weight: variables.$font-weight-semibold;
+  line-height: variables.$line-height-heading;
+  letter-spacing: variables.$letter-spacing-tight;
+  color: variables.$text-primary;
+
+  @media (max-width: variables.$breakpoint-md) {
+    font-size: 32px;
+    letter-spacing: -1%;
+  }
+
+  @media (max-width: variables.$breakpoint-sm) {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: variables.$font-size-h2;
+  font-weight: variables.$font-weight-bold;
+  line-height: variables.$line-height-heading;
+  letter-spacing: variables.$letter-spacing-tight;
+  color: variables.$text-primary;
+  margin-bottom: variables.$margin-sm;
+
+  @media (max-width: variables.$breakpoint-md) {
+    font-size: 24px;
+    margin-bottom: variables.$margin-xs;
+  }
+
+  @media (max-width: variables.$breakpoint-sm) {
+    font-size: 21px;
+  }
+}
+
+h3 {
+  font-size: variables.$font-size-h3;
+  font-weight: variables.$font-weight-medium;
+  line-height: variables.$line-height-default;
+  letter-spacing: variables.$letter-spacing-tight;
+  color: variables.$text-subtitle;
+  margin-bottom: variables.$margin-md;
+
+  @media (max-width: variables.$breakpoint-md) {
+    font-size: 21px;
+    margin-bottom: variables.$margin-sm;
+  }
+
+  @media (max-width: variables.$breakpoint-sm) {
+    font-size: 18px;
+  }
+}
+
+h6 {
+  font-size: variables.$font-size-h6;
+  font-weight: variables.$font-weight-regular;
+  line-height: variables.$line-height-default;
+  letter-spacing: variables.$letter-spacing-tight;
+  color: variables.$text-primary;
+
+  @media (max-width: variables.$breakpoint-md) {
+    font-size: 17px;
+  }
+
+  @media (max-width: variables.$breakpoint-sm) {
+    font-size: 16px;
+  }
+}

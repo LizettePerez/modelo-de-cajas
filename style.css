@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -3%;
+  color: #262626;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    letter-spacing: -1%;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: -3%;
+  color: #262626;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 21px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -3%;
+  color: #7a7575;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -3%;
+  color: #262626;
+}
+@media (max-width: 768px) {
+  h6 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__container {
+  height: 100px;
+  padding: 20px;
+  background: #344c36;
+  margin-top: 50px;
+}
+.footer__title {
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__container {
+  width: 100%;
+  padding: 10px;
+  background: #faad1b;
+}
+.header__title {
+  text-align: center;
+  color: #262626;
+}
+
+.main__container {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: #344c36;
+  color: #ffffff;
+  border: 1px solid #344c36;
+}
+.btn--primary:hover {
+  background-color: #faad1b;
+  color: #344c36;
+}
+.btn--secondary {
+  background-color: #ffffff;
+  color: #262626;
+  border: 1px solid #e5e5e5;
+}
+.btn--secondary:hover {
+  background-color: #7a7575;
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
