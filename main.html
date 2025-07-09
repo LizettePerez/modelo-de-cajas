@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modelo de cajas</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/33fc1bc4f1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,16 +20,110 @@
 
   <main class="main">
     <div class="main__container">
-      <h2 class="main__title">Subtítulo explicativo</h2>
-      <h3 class="main__subtitle">Este es un ejemplo para aplicar el modelo de cajas con BEM.</h3>
+      <h2 class="main__title">Titulo</h2>
+      <h3 class="main__subtitle">subtitulo</h3>
       <button class="main__button btn btn--primary">Ver más</button>
       <button class="main__button btn btn--secondary">Volver</button>
     </div>
-  </main>
 
+    <section class="productos">
+      <div class="productos__container">
+        <h2 class="productos__title">Galeria</h2>
+
+        <div class="productos__grid">
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/textura-pared-verde-lisa-llana_53876-129746.jpg" alt="Producto 1" class="producto__img">
+            <p class="producto__desc">Descripción del producto 1</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-verde_53876-14521.jpg" alt="Producto 2" class="producto__img">
+            <p class="producto__desc">Descripción del producto 2</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-textura-abstracta_1258-30484.jpg?ga=GA1.1.125231703.1752018989&semt=ais_hybrid&w=740" alt="Producto " class="producto__img">
+            <p class="producto__desc">Descripción del producto 2</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/textura-pared-verde-lisa-llana_53876-129746.jpg" alt="Producto 1" class="producto__img">
+            <p class="producto__desc">Descripción del producto 3</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-verde_53876-14521.jpg" alt="Producto 2" class="producto__img">
+            <p class="producto__desc">Descripción del producto 4</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-textura-abstracta_1258-30484.jpg?ga=GA1.1.125231703.1752018989&semt=ais_hybrid&w=740" alt="Producto " class="producto__img">
+            <p class="producto__desc">Descripción del producto 5</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/textura-pared-verde-lisa-llana_53876-129746.jpg" alt="Producto 1" class="producto__img">
+            <p class="producto__desc">Descripción del producto 6</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-verde_53876-14521.jpg" alt="Producto 2" class="producto__img">
+            <p class="producto__desc">Descripción del producto 7</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-textura-abstracta_1258-30484.jpg?ga=GA1.1.125231703.1752018989&semt=ais_hybrid&w=740" alt="Producto " class="producto__img">
+            <p class="producto__desc">Descripción del producto 8</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/textura-pared-verde-lisa-llana_53876-129746.jpg" alt="Producto 1" class="producto__img">
+            <p class="producto__desc">Descripción del producto 9</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-verde_53876-14521.jpg" alt="Producto 2" class="producto__img">
+            <p class="producto__desc">Descripción del producto 10</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-textura-abstracta_1258-30484.jpg?ga=GA1.1.125231703.1752018989&semt=ais_hybrid&w=740" alt="Producto " class="producto__img">
+            <p class="producto__desc">Descripción del producto 11</p>
+          </div>
+
+          <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/fondo-textura-abstracta_1258-30484.jpg?ga=GA1.1.125231703.1752018989&semt=ais_hybrid&w=740" alt="Producto " class="producto__img">
+            <p class="producto__desc">Descripción del producto 12</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__info">
+          <h2 class="contact__title">Formulario de <span>contacto</span></h2>
+          <h3 class="contact__subtitle">Lorem ipsum dolor.</h3>
+        </div>
+        <form class="contact__form">
+          <input type="text" placeholder="Nombre" class="contact__input" />
+          <input type="text" placeholder="Apellido" class="contact__input" />
+          <textarea placeholder="Comentario" class="contact__textarea"></textarea>
+          <button type="submit" class="btn btn--primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer__container">
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="#" class="footer__icon"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
       <h6 class="footer__title">©2025. Todos los derechos reservados.</h6>
     </div>
   </footer>

@@ -1,7 +1,7 @@
 @use '../abstract/variables';
 
 .main {
-  &__container{
+  &__container {
     width: variables.$container-width-lg;
     margin: variables.$margin-md auto;
     border: 1px solid variables.$border;
@@ -9,6 +9,121 @@
     background: variables.$bg-secondary;
   }
 
+  .contact {
+    margin-top: variables.$margin-lg;
+    width: variables.$container-width-full;
+
+    &__container {
+      margin: 0 auto;
+      padding: variables.$padding-md;
+      display: flex;
+      justify-content: space-around;
+      gap: variables.$margin-lg;
+
+      @media (max-width: variables.$breakpoint-md) {
+        flex-direction: column;
+        align-items: center;
+        gap: variables.$margin-sm;
+      }
+
+    }
+
+    &__info {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: variables.$text-secondary;
+        font-style: italic;
+      }
+
+      @media (max-width: variables.$breakpoint-md) {
+        align-items: center;
+        width: 100%;
+      }
+    }
+
+    &__form {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: variables.$margin-sm;
+
+      @media (max-width: variables.$breakpoint-md) {
+        width: 100%;
+      }
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      padding: variables.$padding-sm;
+      border: 1px solid variables.$border;
+      border-radius: variables.$border-radius;
+      font-size: variables.$font-size-p;
+    }
+
+    &__textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+
+  .productos {
+    margin-top: variables.$margin-lg;
+    width: variables.$container-width-full;
+    background: variables.$color-primary;
+    padding: variables.$padding-md;
+
+    &__container {
+      margin: 0 auto;
+      padding: variables.$padding-md;
+    }
+
+    &__title {
+      margin-bottom: variables.$margin-md;
+      color: variables.$text-tertiary;
+      text-align: center;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: variables.$margin-md;
 
 
+      @media (max-width: variables.$breakpoint-sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .producto {
+      background-color: variables.$bg-secondary;
+      padding: variables.$padding-sm;
+      border: 1px solid variables.$border;
+      border-radius: variables.$border-radius;
+      text-align: center;
+
+      &__img {
+        width: 100%;
+        height: 250px;
+        margin-bottom: variables.$margin-sm;
+        border-radius: variables.$border-radius;
+
+        @media (max-width: variables.$breakpoint-md) {
+          height: 200px;
+        }
+
+        @media (max-width: variables.$breakpoint-sm) {
+          height: 150px;
+        }
+      }
+
+      &__desc {
+        font-size: variables.$font-size-p;
+        color: variables.$text-primary;
+      }
+    }
+  }
 }

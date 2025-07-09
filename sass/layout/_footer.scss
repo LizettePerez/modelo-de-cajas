@@ -2,7 +2,7 @@
 
 
 .footer {
-  &__container{
+  &__container {
     height: variables.$footer-height;
     padding: variables.$padding-md;
     background: variables.$color-primary;
@@ -12,5 +12,21 @@
   &__title {
     text-align: center;
     color: variables.$text-tertiary;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  &__icon {
+    font-size: 24px;
+    color: variables.$text-tertiary;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$color-secondary;
+    }
   }
 }

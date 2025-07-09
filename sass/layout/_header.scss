@@ -1,7 +1,13 @@
 @use '../abstract/variables';
 
 .header {
-  &__container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: variables.$container-width-full;
+
+  &__container {
     width: variables.$container-width-full;
     padding: variables.$padding-sm;
     background: variables.$color-secondary;
